@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Statistik */
+.stats-card {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #e9ecef;
+}
+
+.stats-card p {
+  margin: 5px 0;
+}
+
+.progress-container {
+  background-color: #e9ecef;
+  border-radius: 4px;
+  height: 10px;
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background-color: #4CAF50;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* Form dan Input */
+.form-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+/* Tombol */
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.btn-primary { background-color: #4CAF50; color: white; }
+.btn-primary:hover { background-color: #45a049; }
+
+.btn-secondary { background-color: #2196F3; color: white; }
+.btn-secondary:hover { background-color: #1976D2; }
+
+.btn-warning { background-color: #ff9800; color: white; }
+.btn-warning:hover { background-color: #f57c00; }
+
+.btn-danger { background-color: #f44336; color: white; }
+.btn-danger:hover { background-color: #d32f2f; }
+
+.btn-outline-danger { background-color: transparent; color: #f44336; border: 1px solid #f44336; }
+.btn-outline-danger:hover { background-color: #f44336; color: white; }
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Daftar Item */
+ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.item-text {
+  flex: 1;
+  font-size: 16px;
+}
+
+.item-completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.item-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.empty-state {
+  text-align: center;
+  color: #888;
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px; 
+    border-radius: 0; 
+  }
+
+  h1 { font-size: 24px; }
+
+  .form-group {
+    flex-direction: column; 
+  }
+
+  .action-buttons {
+    flex-direction: column; 
+  }
+}
