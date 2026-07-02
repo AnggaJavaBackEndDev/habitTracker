@@ -1,8 +1,8 @@
 import ItemKebiasaan from './ItemKebiasaan';
 
-export default function DaftarKebiasaan({ daftar, onHapus, onToggle, onEdit }) {
+export default function DaftarKebiasaan({ daftar, onHapus, onToggle, onEdit, onSimpanCatatan }) {
   if (daftar.length === 0) {
-    return <p className="empty-state">Data kosong. Tambahkan kebiasaan baru!</p>;
+    return <p className="empty-state">Belum ada habit untuk hari ini. Tambahkan sekarang!</p>;
   }
 
   return (
@@ -14,6 +14,7 @@ export default function DaftarKebiasaan({ daftar, onHapus, onToggle, onEdit }) {
           onHapus={onHapus} 
           onToggle={onToggle} 
           onEdit={onEdit} 
+          onSimpanCatatan={onSimpanCatatan}
         />
       ))}
     </ul>
