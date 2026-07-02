@@ -26,7 +26,7 @@ Aplikasi web untuk melacak kebiasaan harian, dibangun dengan React.
 
 ```bash
 # clone repositori
-git clone https://github.com/anggaJavaBackEndDev/habit-tracker.git
+git clone https://github.com/AnggaJavaBackEndDev/habit-tracker.git
 cd habit-tracker
 
 # install dependency
